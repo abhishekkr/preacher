@@ -23,7 +23,7 @@ type DataItem struct {
 
 func (item *DataItem) Get(itemID int) {
 	uri := fmt.Sprintf("https://hacker-news.firebaseio.com/v0/item/%d.json", itemID)
-	responseBody, err := golhttpclient.HttpGet()
+	responseBody, err := golhttpclient.HttpGet(uri, map[string]string{}, map[string]string{})
 	if err != nil {
 		log.Printf("[error] %s", err.Error())
 	}
