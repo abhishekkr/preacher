@@ -11,9 +11,9 @@ import (
 var (
 	itemURI = "https://hacker-news.firebaseio.com/v0/item/%d.json"
 
-	newStoriesURI  = "https://hacker-news.firebaseio.com/v0/newstories"
-	topStoriesURI  = "https://hacker-news.firebaseio.com/v0/topstories"
-	bestStoriesURI = "https://hacker-news.firebaseio.com/v0/beststories"
+	newStoriesURI  = "https://hacker-news.firebaseio.com/v0/newstories.json"
+	topStoriesURI  = "https://hacker-news.firebaseio.com/v0/topstories.json"
+	bestStoriesURI = "https://hacker-news.firebaseio.com/v0/beststories.json"
 )
 
 type DataItem struct {
