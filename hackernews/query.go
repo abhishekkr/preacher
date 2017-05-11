@@ -42,7 +42,7 @@ func (item *DataItem) Get(itemID int) {
 	return
 }
 
-func NewStoryIDs(itemID int) (itemIDs []int) {
+func NewStoryIDs() (itemIDs []int) {
 	responseBody, err := golhttpclient.HttpGet(newStoriesURI, map[string]string{}, map[string]string{})
 	if err != nil {
 		log.Printf("[error] %s", err.Error())
@@ -54,7 +54,7 @@ func NewStoryIDs(itemID int) (itemIDs []int) {
 	return
 }
 
-func TopStoryIDs(itemID int) (itemIDs []int) {
+func TopStoryIDs() (itemIDs []int) {
 	responseBody, err := golhttpclient.HttpGet(topStoriesURI, map[string]string{}, map[string]string{})
 	if err != nil {
 		log.Printf("[error] %s", err.Error())
@@ -66,7 +66,7 @@ func TopStoryIDs(itemID int) (itemIDs []int) {
 	return
 }
 
-func BestStoryIDs(itemID int) (itemIDs []int) {
+func BestStoryIDs() (itemIDs []int) {
 	responseBody, err := golhttpclient.HttpGet(bestStoriesURI, map[string]string{}, map[string]string{})
 	if err != nil {
 		log.Printf("[error] %s", err.Error())
