@@ -5,8 +5,8 @@
 	"Deps": [
 		{
 			"ImportPath": "github.com/abhishekkr/gol/golhttpclient",
-			"Comment": "golkeyvalNS_simple-12-g65f0f41",
-			"Rev": "65f0f414372307cef53aac2586027d96ff897095"
+			"Comment": "golkeyvalNS_simple-14-g917319d",
+			"Rev": "917319d9f8895e340d4fbfcd52364a1a390d293f"
 		}
 	]
 }
